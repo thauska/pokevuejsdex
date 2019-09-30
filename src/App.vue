@@ -5,7 +5,7 @@
       <v-flex xs12>
         <v-img src="Pokemon_logo.gif" contain height="200"></v-img>
       </v-flex>
-      <ListaPokemon />
+      <Pokemon />
     </v-content>
     <Footer />
   </v-app>
@@ -14,13 +14,13 @@
 <script>
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ListaPokemon from "./components/ListaPokemon";
+import Pokemon from "./components/Pokemon";
 
 export default {
   name: "App",
   components: {
     Header,
-    ListaPokemon,
+    Pokemon,
     Footer
   }
 };
