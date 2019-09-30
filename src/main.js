@@ -1,12 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
-import axios from 'axios'
 import vuetify from './plugins/vuetify';
-
-axios.defaults.baseURL = "https://pokeapi.com/api/v2"
-Vue.prototype.axios = axios
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 Vue.config.productionTip = false
+
+require('nes.css/css/nes.min.css')
 
 new Vue({
   vuetify,

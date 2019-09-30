@@ -1,36 +1,33 @@
 <template>
   <v-app>
-    <v-app-bar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        text
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
-    </v-app-bar>
-
+    <Header />
     <v-content>
-      <HelloWorld/>
+      <v-flex xs12>
+        <v-img src="Pokemon_logo.gif" contain height="200"></v-img>
+      </v-flex>
+      <ListaPokemon />
     </v-content>
+    <Footer />
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ListaPokemon from "./components/ListaPokemon";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld,
-  },
-  data: () => ({
-    //
-  }),
+    Header,
+    ListaPokemon,
+    Footer
+  }
 };
 </script>
+
+<style>
+.v-application {
+  font-family: "Press Start 2P", cursive !important;
+}
+</style>
